@@ -527,6 +527,7 @@ footer a {
     position: relative;
     width: 50px;
     cursor: pointer;
+    margin-bottom: 0.7rem;
 }
 
 .check:before {
