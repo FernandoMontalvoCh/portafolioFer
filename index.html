@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>FM</title>
+</head>
+<body>
+    <!-- inicio -->
+    <section id="inicio">
+        <div class="container">
+            <header>
+                <div class="container-header">
+                    <h1>/FM/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="selected" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a></li>
+                            <li><a href="#habilidades" oclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#portafolio" onlick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="network">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentation">
+                <p class="welcome">Bienvenidos</p>
+                <h2>Soy <span>Fernando Montalvo</span>, Desarrollador Web</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#portafolio">Ir a Portafolio</a>
+                <span class="en">English</span>
+                <input type="checkbox" class="check">
+                <span class="es">Spanish</span>
+            </div>
+        </div>
+    </section>
+    <!-- sobre mi -->
+    <section id="sobremi">
+        <div class="img-container">
+            <img src="img/Fer.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p  class="title-section">Sobre Mi</p>
+            <h2>Hola, soy <span>Fernando Montalvo</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore incidunt eius quia? Rerum necessitatibus asperiores, eum fugiat corrupti quidem, nemo officia numquam accusamus doloremque suscipit nihil rem repellendus error ipsam.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <a download="English-CV" href="./CV/Currículum Profesional Formas geométricas Minimalista Blanco y negro.pdf">Descargar CV</a>
+        </div>
+    </section>
+    <!-- habilidades -->
+    <section id="habilidades">
+        <h3 class="section-title">MIS HABILIDADES</h3>
+        <div class="fila">
+            <div class="habilidad">
+                <span class="icon"><i class="fa-brands fa-react"></i></span>
+                <h4>React</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                </ul>
+                <p>Estudios realizados en Academlo.</p>
+            </div>
+            <div class="habilidad">
+                <span class="icon"><i class="fa-brands fa-square-js"></i></span>
+                <h4>JavaScript</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                </ul>
+                <p>Estudios realizados en Academlo.</p>
+            </div>
+            <div class="habilidad">
+                <span class="icon"><i class="fa-brands fa-html5"></i></span>
+                <h4>Html</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                </ul>
+                <p>Estudios realizados en Academlo.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="habilidad">
+                <span class="icon"><i class="fa-brands fa-css3-alt"></i></span>
+                <h4>Css</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                </ul>
+                <p>Estudios realizados en Academlo.</p>
+            </div>
+            <div class="habilidad">
+                <span class="icon"><i class="fa-brands fa-square-github"></i></span>
+                <h4>GitHub</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                </ul>
+                <p>Estudios realizados en Academlo.</p>
+            </div>
+            <div class="habilidad">
+                <span class="icon"><i class="fa-brands fa-bootstrap"></i></span>
+                <h4>Bootstrap</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                </ul>
+                <p>Estudios realizados en Academlo.</p>
+            </div>
+        </div>
+    </section>
+    <!-- other skills -->
+    <div class="skills-container" id="skills">
+            <h3>OTRAS HABILIDADES</h3>
+            <div class="skills">
+                <div class="info">
+                    <p><span class="list"></span>Adaptabilidad</p>
+                    <span class="percent">98%</span>
+                </div>
+                <div class="bar">
+                    <div id="adapt" class="bar-progress1"></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="info">
+                    <p><span class="list"></span>Trabajo en equipo</p>
+                    <span class="percent">95%</span>
+                </div>
+                <div class="bar">
+                    <div id="adapt" class="bar-progress2"></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="info">
+                    <p><span class="list"></span>Aprendizaje</p>
+                    <span class="percent">99%</span>
+                </div>
+                <div class="bar">
+                    <div id="adapt" class="bar-progress3"></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="info">
+                    <p><span class="list"></span>Compromiso</p>
+                    <span class="percent">100%</span>
+                </div>
+                <div class="bar">
+                    <div id="adapt" class="bar-progress4"></div>
+                </div>
+            </div>
+    </div>
+    <!-- portafolio -->
+    <section id="portafolio">
+        <h3 class="section-title">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/e-c.png" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Web Desing</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/p.png" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Web Desing</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/rm.png" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Web Desing</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/form.png" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Web Desing</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/wa.png" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Web Desing</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/q.png" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Web Desing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contacto -->
+    <section id="contacto">
+        <h3 class="section-title">Contactame ahora</h3>
+        <div class="container-form">
+            <form action="https://formsubmit.co/fmontalvochavez@gmail.com" method="POST">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="name">
+                    <input type="text" placeholder="Dirección de Email" class="input-mitad" name="email">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full" name="subject">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" name="comments"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="network">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
